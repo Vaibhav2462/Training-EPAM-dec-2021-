@@ -17,9 +17,7 @@ async function getDatanext(token){
     return data
 }
 function displayVideos(idx){
-    console.log(Videos.items)
     let returnVideos = Videos.items.slice(10*(idx-1),10*idx-1)
-    // console.log(returnVideos)
     return returnVideos;
 }
 function myData(){
@@ -31,7 +29,6 @@ function myData(){
 })
 }
 function build(){
-    console.log(Videos)
     let cards = document.querySelectorAll(".card")
     for(let i = 0 ; i<cards.length ; i++){
         cards[i].remove()
@@ -61,8 +58,6 @@ function build(){
             videoContainer.classList.add("cont")
             body.appendChild(videoContainer)
             toDisplay.map((video)=>{
-                
-                console.log(video)
                 let card = document.createElement("div")
                 card.classList.add("card")
                 videoContainer.appendChild(card)
@@ -100,10 +95,7 @@ prev.addEventListener("click",async function(){
     
 })
 search.addEventListener("input", function(e){
-    console.log(true);
-    // console.log(search);
     let mySearch = e.target.value
-    console.log(mySearch);
     if(mySearch!=""){
         let searchVideos = Videos.items.filter((vid)=>{return vid.snippet.title.toUpperCase().includes(mySearch.toUpperCase())}) 
         console.log(searchVideos);
@@ -148,8 +140,6 @@ function firstNine(){
                 count++;
                 return vid}})
             show.map((video)=>{
-                
-                console.log(video)
                 let card = document.createElement("div")
                 card.classList.add("card")
                 videoContainer.appendChild(card)

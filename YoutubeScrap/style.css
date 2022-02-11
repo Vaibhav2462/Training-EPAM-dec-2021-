@@ -74,3 +74,50 @@
     margin-left: 28rem;
     /* margin-top: 1rem; */
   }
+
+  @media screen and (max-width:786px){
+    .pageContainerSmall{
+      margin-left: 13rem;
+      /* margin-top: 1rem; */
+    }
+    .heading{
+      height: 3rem;
+      margin-left: 17rem;
+      margin-bottom: 2rem;
+    }
+    input[type=text] {
+      /* float: right; */
+      padding: 6px;
+      border: none;
+      font-size: 17px;
+      background-color: rgb(179, 171, 171);
+      position: absolute;
+      top: 9rem;
+      left: -7rem;
+    }
+    .prev{
+      position: absolute;
+      left: -3rem;
+      top: 7rem;
+    }
+    .next{
+      position: absolute;
+      top:9rem;
+      right: 1rem;
+    }
+    .search{
+      position: absolute;
+    left: 30rem;
+    top: 9rem
+    }
+    .pageContainerSmall{
+      position: absolute;
+      top: 13rem;
+    }
+    .mystyle{
+      height: 2rem;
+    }
+    .card{
+      margin-left: 9rem;
+    }
+}
